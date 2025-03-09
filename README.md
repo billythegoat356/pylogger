@@ -66,7 +66,7 @@ Only levels greater than or equal to the minimum level will be logged.
 
 The root path is generally auto-detected at runtime.  
 However, like in this example, we can set the root path to a specific directory.  
-The path will be logged as relative from the root path.  
+The path will be logged as relative to the root path.  
 
 *This script was executed from `C:/Users/billy/Desktop/Projects/pylogger/logging_test.py`.*  
 ```
@@ -96,7 +96,7 @@ Logger.debug("Hey!")
 # 15:53:16 ~ 09 Mar 2025 || pylogger/logging_test.py [7] ||  DEBUG  >>> Hey!
 ```
 This logged the message to `file.log`.
-**NOTE:** The message will still be logged to the terminal!
+**NOTE:** The message will still be logged to the terminal.
 
 # Create logger with prefix
 
@@ -116,7 +116,7 @@ user1_logger.info("User 1 is doing something")
 user2_logger.info("User 2 is doing something")
 # user2 | 16:10:25 ~ 09 Mar 2025 || logging_test.py [10] || INFO >>> User 2 is doing something
 ```
-You can have a certain logger log to a specific file the following way:
+You can have a certain logger log to a specific file in the following way:
 ```
 user1_logger = PrefixLogger("user1", log_file="user1.log")
 ```
