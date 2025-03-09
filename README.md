@@ -111,10 +111,10 @@ user1_logger = PrefixLogger("user1")
 user2_logger = PrefixLogger("user2")
 
 user1_logger.info("User 1 is doing something")
-# user1 | 16:10:25 ~ 09 Mar 2025 || logging_test.py [7] || INFO >>> User 1 is doing something
+# user1 || 16:10:25 ~ 09 Mar 2025 || logging_test.py [7] || INFO >>> User 1 is doing something
 
 user2_logger.info("User 2 is doing something")
-# user2 | 16:10:25 ~ 09 Mar 2025 || logging_test.py [10] || INFO >>> User 2 is doing something
+# user2 || 16:10:25 ~ 09 Mar 2025 || logging_test.py [10] || INFO >>> User 2 is doing something
 ```
 You can have a certain logger log to a specific file in the following way:
 ```
@@ -134,7 +134,7 @@ user_logger = PrefixLogger(prefix)
 
 user_logger.info("User is doing something")
 # The prefix will be displaid in a red color
-# User | 16:10:25 ~ 09 Mar 2025 || logging_test.py [8] || INFO >>> User is doing something
+# User || 16:10:25 ~ 09 Mar 2025 || logging_test.py [8] || INFO >>> User is doing something
 ```
 
 
