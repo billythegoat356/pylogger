@@ -60,6 +60,7 @@ Logger.debug("Hello world!")
 Logger.fatal("This is a fatal error!")
 # 15:53:16 ~ 09 Mar 2025 || logging_test.py [11] ||  FATAL  >>> This is a fatal error!
 ```
+Only levels greater than or equal to the minimum level will be logged.
 
 # Customize root path
 
