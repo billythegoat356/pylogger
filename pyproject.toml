@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pylogger"
+version = "0.1"
+description = "A custom simplistic yet powerful logging package"
+authors = [{name = "Billy", email = "billythegoat356@gmail.com"}]
+dependencies = [
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
