@@ -12,12 +12,13 @@ You can override these values and customize the styling of the formatting
 
 "Separators for the formatting of the log messages"
 class Separators:
-    prefix_time = " | "
+    prefix_time = " || "
 
     time_date = " ~ "
     date_path = " || "
     path_lineno = " "
     lineno_level = " || "
+    
     level_message = " >>> "
 
 
