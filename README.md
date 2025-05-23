@@ -47,7 +47,7 @@ Logger.fatal("This is a fatal error!")
 
 By default, the minimum level is set to `Levels.INFO`.
 
-```
+```py
 from pylogger import Logger, Config, Levels
 
 # Set the minimum level to warning mode
@@ -69,7 +69,7 @@ However, like in this example, we can set the root path to a specific directory.
 The path will be logged as relative to the root path.  
 
 *This script was executed from `C:/Users/billy/Desktop/Projects/pylogger/logging_test.py`.*  
-```
+```py
 from pylogger import Logger, Config
 
 # Set your custom root path
@@ -79,14 +79,14 @@ Logger.debug("This is logged with your custom root path.")
 # 15:53:16 ~ 09 Mar 2025 || pylogger/logging_test.py [6] ||  DEBUG  >>> This is logged with your custom root path.
 ```
 You can also let the root path be detected and set automatically at the current file's root path.
-```
+```py
 Config.set_root_path() # Leave empty
 ```
 
 # Log to a file
 
 You can also easily log to a file
-```
+```py
 from pylogger import Logger, Config
 
 # Set the log file's path
@@ -103,7 +103,7 @@ This logged the message to `file.log`.
 Let's say we want to easily be able to distinguish between which part of our scripts is being logged.  
 To do that, it's as simple as creating a **PrefixLogger**.  
 
-```
+```py
 from pylogger import PrefixLogger
 
 # Pass the prefix name as arguments
@@ -117,14 +117,14 @@ user2_logger.info("User 2 is doing something")
 # user2 || 16:10:25 ~ 09 Mar 2025 || logging_test.py [10] || INFO >>> User 2 is doing something
 ```
 You can have a certain logger log to a specific file in the following way:
-```
+```py
 user1_logger = PrefixLogger("user1", log_file="user1.log")
 ```
 **NOTE:** The prefix loggers will always log to the main log file, if set.  
 If a custom log file is given, it will log to this one aswell.  
 
 You can also colorize a logger prefix.  
-```
+```py
 from pylogger import PrefixLogger
 from pylogger.colors import Colors
 
@@ -145,7 +145,7 @@ While it is not possible to change the log formatting, you can customize the sty
 **NOTE:** Color customization varies across different environments, this might affect how colors are displaid.  
 See the example below.  
 
-```
+```py
 from pylogger import Logger
 from pylogger.styles import Separators, FormatColors
 from pylogger.levels import Levels
@@ -181,7 +181,7 @@ Logger.info("Custom style!")
 # Create a new level
 You can log with a custom level specific for your needs.
 
-```
+```py
 from pylogger import Logger
 from pylogger.levels import LevelModel
 from pylogger.colors import ColorCombo, Colors
