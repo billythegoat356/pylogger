@@ -30,7 +30,7 @@ pip install .
 # Usage
 # Basic usage
 
-```
+```py
 # Import the package
 from pylogger import Logger
 
